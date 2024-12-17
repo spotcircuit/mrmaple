@@ -168,7 +168,7 @@ li.mega-menu-item > .mega-menu {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   padding: 2rem;
-  width: 800px;
+  width: 1000px;
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -368,16 +368,18 @@ li.mega-menu-item:hover > .mega-menu {
 
 /* Features Bar */
 .features-bar {
-  background: white;
-  padding: 1.5rem 0;
+  background: var(--background-color);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 4rem;
+  margin-bottom: 0;  /* Add this line */
 }
 
 .features-bar .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-bottom: 0;
 }
 
 .feature {
@@ -408,7 +410,7 @@ li.mega-menu-item:hover > .mega-menu {
 .deal-of-day {
   padding: 4rem 0;
   background: var(--accent-color);
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .section-header {

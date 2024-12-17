@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | MrMaple</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/shop">Shop</a></li>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/contact-us">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <input type="text" placeholder="Search...">
+      <a href="/cart" class="cart-icon">Cart (0)</a>
+    </div>
+  </nav>
+
+  <!-- Product Details Section -->
+  <section id="product-details">
+    <div class="product-gallery">
+      <img src="mrmaple_images/Acer_palmatum_Red_Wine_Red_Japanese_Maple_-_Mr_Maple_Buy_Japanese_Maple_Trees-2067566_512x342.jpgv1722593454" alt="Acer palmatum 'Red Wine'" id="main-image">
+      <div class="thumbnail-gallery">
+        <img src="mrmaple_images/Acer_palmatum_Red_Wine_Red_Japanese_Maple_-_Mr_Maple_Buy_Japanese_Maple_Trees-2067566_512x342.jpgv1722593454" alt="Red Wine Maple View 1" class="active">
+        <img src="mrmaple_images/Acer_palmatum_Red_Wine_Red_Japanese_Maple_-_Mr_Maple_Buy_Japanese_Maple_Trees-2067570_512x384.jpgv1722593460" alt="Red Wine Maple View 2">
+        <img src="mrmaple_images/Acer_palmatum_Burgundy_Lace_Japanese_Maple_-_Mr_Maple_Buy_Japanese_Maple_Trees-2046892_512x384.jpgv1722552099" alt="Similar Variety">
+      </div>
+    </div>
+    <div class="product-info">
+      <h1>Acer palmatum 'Red Wine'</h1>
+      <p class="price">$45.00</p>
+      <p class="short-description">A stunning Japanese Maple known for its deep wine-red foliage and elegant upright growth habit.</p>
+      <ul class="product-features">
+        <li>Growth Zone: 5-9</li>
+        <li>Height: 10-15 feet</li>
+        <li>Sunlight: Full sun to partial shade</li>
+        <li>Fall Color: Deep burgundy red</li>
+      </ul>
+      <div class="purchase-options">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs for Additional Information -->
+  <section id="product-tabs">
+    <div class="tabs">
+      <button class="tab-button active" data-tab="description">Description</button>
+      <button class="tab-button" data-tab="reviews">Reviews</button>
+      <button class="tab-button" data-tab="shipping">Shipping Info</button>
+    </div>
+    <div class="tab-content">
+      <div id="description" class="tab-panel active">
+        <p>The Acer palmatum 'Red Wine' is a magnificent Japanese Maple that lives up to its name with rich, wine-colored foliage that maintains excellent color throughout the growing season. This versatile tree is perfect for gardens, landscapes, and makes an excellent focal point.</p>
+        <p>Its upright growth habit and moderate size make it suitable for both small and large gardens. The foliage emerges in spring with a brilliant red color, deepening to a rich burgundy through summer, before putting on a spectacular show in fall.</p>
+      </div>
+      <div id="reviews" class="tab-panel">
+        <div class="review">
+          <p class="review-text">"Absolutely stunning maple! The color is exactly as described, and it's thriving in my garden."</p>
+          <p class="reviewer">- Sarah L.</p>
+        </div>
+        <div class="review">
+          <p class="review-text">"Excellent shipping and the tree arrived in perfect condition. Growing beautifully!"</p>
+          <p class="reviewer">- Mike R.</p>
+        </div>
+        <a href="#write-review" class="write-review-btn">Write a Review</a>
+      </div>
+      <div id="shipping" class="tab-panel">
+        <p>We take great care in packaging and shipping our Japanese Maples:</p>
+        <ul>
+          <li>Ships within 5-7 business days</li>
+          <li>Carefully packaged with moisture-retaining medium</li>
+          <li>Protected shipping container ensures safe delivery</li>
+          <li>Tracking number provided via email</li>
+          <li>Satisfaction guaranteed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section id="related-products">
+    <h2>Related Products</h2>
+    <div class="related-list">
+      <div class="product">
+        <img src="mrmaple_images/Acer_palmatum_Burgundy_Lace_Japanese_Maple_-_Mr_Maple_Buy_Japanese_Maple_Trees-2046892_512x384.jpgv1722552099" alt="Acer palmatum 'Burgundy Lace'">
+        <h3>Acer palmatum 'Burgundy Lace'</h3>
+        <p>$50.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="mrmaple_images/Acer_palmatum_Shirazz_Japanese_Maple_-_Mr_Maple_Buy_Japanese_Maple_Trees-2069330_512x341.jpgv1722599224" alt="Acer palmatum 'Shirazz'">
+        <h3>Acer palmatum 'Shirazz'</h3>
+        <p>$59.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
