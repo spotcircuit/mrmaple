@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2E5A1C;
+  --secondary-color: #D4AF37;
+  --text-color: #333333;
+  --light-text: #666666;
+  --background-color: #FFFFFF;
+  --accent-color: #E8F3E5;
+  --danger-color: #DC3545;
+  --success-color: #4A8C3B;
+  --border-color: #E1E1E1;
+  --swiper-theme-color: #2E5A1C;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  
+  .container-wide {
+    @apply mx-auto px-8 max-w-[1600px];
+  }
+}
+
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--primary-color) !important;
+}
+
+/* Category Grid */
+.category-card {
+  @apply relative overflow-hidden rounded-lg shadow-lg transition-all duration-300;
+}
+
+.category-card:hover img {
+  @apply scale-110;
+}
+
+.category-card img {
+  @apply transition-transform duration-300;
+}
+
+.category-card-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/70 to-transparent;
+}
+
+.category-card-content {
+  @apply absolute bottom-0 left-0 right-0 p-4 text-white;
+}
+
+/* Deal of Day Section */
+.deal-section {
+  @apply bg-accent rounded-lg shadow-lg overflow-hidden;
+}
+
+.deal-timer {
+  @apply flex gap-4 text-2xl font-bold mb-4;
+}
+
+.timer-block {
+  @apply bg-primary text-white p-3 rounded-lg min-w-[60px] text-center;
+}
+
+/* Category Section */
+.category-section {
+  @apply bg-white rounded-lg shadow-lg p-6;
+}
+
+.category-list {
+  @apply space-y-3;
+}
+
+.category-item {
+  @apply flex items-center justify-between p-3 hover:bg-accent rounded-lg transition-colors cursor-pointer;
+}
+
+/* Hero Section */
+.hero-content {
+  @apply relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-white text-center;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-40;
+}
+
+/* Layout */
+.main-layout {
+  @apply min-h-screen flex flex-col;
+}
+
+.section-padding {
+  @apply py-12;
+}
