@@ -1007,3 +1007,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+.shop-deal-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
