@@ -39,3 +39,17 @@ npm run build
 - v1.3: Implemented mega menu and navigation system
 - v1.2: Added hero section and basic layout
 - v1.1: Project initialization with Next.js and core dependencies
+
+### In Progress
+- Footer component implementation
+  - Needs to follow component folder structure pattern
+  - Should match styling of existing layout components
+  - Will include business hours, links, newsletter signup, and social media
+
+### Project Structure
+- Components follow a folder-based organization
+  - Each component has its own directory
+  - Component types are co-located in the same directory
+  - Example: src/components/home/Newsletter/
+    - index.tsx (component)
+    - types.ts (types)
