@@ -41,30 +41,29 @@ export const mainMenuItems: MenuItem[] = [
     ]
   },
   {
-    name: '10@10 Trees',
-    href: '/10-at-10',
-    description: 'Exclusive releases every Tuesday & Thursday at 10AM EST',
+    name: 'Collections',
+    href: '/collections',
+    description: 'Explore our specially curated maple collections',
     featuredImage: {
-      src: '/images/featured/10-at-10.jpg',
-      alt: 'Featured 10@10 Trees'
+      src: '/images/featured/collections.jpg',
+      alt: 'Featured Collections'
     },
     categories: [
-      { name: 'Current Releases', href: '/10-at-10/current' },
-      { name: 'Past Highlights', href: '/10-at-10/past' }
-    ]
-  },
-  {
-    name: 'Expert Picks',
-    href: '/expert-picks',
-    description: 'Curated selections from our expert team',
-    featuredImage: {
-      src: '/images/featured/expert-picks.jpg',
-      alt: 'Expert Selected Trees'
-    },
-    categories: [
-      { name: 'Best Sellers', href: '/expert-picks/best-sellers' },
-      { name: 'Limited Availability', href: '/expert-picks/limited' },
-      { name: 'Rare Finds', href: '/expert-picks/rare' }
+      { 
+        name: '10@10 Collection',
+        href: '/collections/10-at-10',
+        description: 'Exclusive releases every Tuesday & Thursday at 10AM EST'
+      },
+      { 
+        name: 'Best Sellers',
+        href: '/collections/best-sellers',
+        description: 'Our most popular and sought-after maples'
+      },
+      { 
+        name: 'Limited Availability',
+        href: '/collections/limited',
+        description: 'Rare and unique trees available for a short time'
+      }
     ]
   },
   {
@@ -102,39 +101,12 @@ export const mainMenuItems: MenuItem[] = [
     description: 'Learn about our story and mission',
     featuredImage: {
       src: '/images/featured/about-us.jpg',
-      alt: 'Our Nursery'
+      alt: 'About MrMaple'
     },
     categories: [
-      { name: 'Visit the Nursery', href: '/about/visit' },
-      { name: 'Speaking Engagements', href: '/about/speaking' },
-      { name: 'Our Story', href: '/about/story' }
-    ]
-  },
-  {
-    name: 'Blog/Media',
-    href: '/blog',
-    description: 'Latest updates and media content',
-    featuredImage: {
-      src: '/images/featured/blog-media.jpg',
-      alt: 'Blog and Media'
-    },
-    categories: [
-      { name: 'The MrMaple Show', href: '/blog/show' },
-      { name: 'The MrMaple Podcast', href: '/blog/podcast' }
-    ]
-  },
-  {
-    name: 'Contact Us',
-    href: '/contact',
-    description: 'Get in touch with us',
-    featuredImage: {
-      src: '/images/featured/contact.jpg',
-      alt: 'Contact Us'
-    },
-    categories: [
-      { name: 'Contact Form', href: '/contact/form' },
-      { name: 'Schedule an Appointment', href: '/contact/schedule' },
-      { name: 'Shipping & Refund Policies', href: '/contact/policies' }
+      { name: 'Our Story', href: '/about/story' },
+      { name: 'Contact Us', href: '/about/contact' },
+      { name: 'FAQs', href: '/about/faqs' }
     ]
   }
-];
+] as const;

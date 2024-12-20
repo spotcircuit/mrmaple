@@ -1,32 +1,26 @@
 'use client';
+
 console.log('Loading: ProductCarousel/index.tsx');
 
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { type Section } from './types';
+import { promotionalSections } from '@/config/promotions';
 
-const sections: Section[] = [
-  {
-    badge: "Special Offer",
-    title: "10@10 Collection",
-    description: "10 Trees at $10 Each - Limited Time Offer",
-    image: '/images/placeholder.svg',
-    link: '/flash-sale'
-  },
-  {
-    badge: "Limited Time",
-    title: "Limited Availability Sale",
-    description: "Rare and Unique Trees at Special Prices",
-    image: '/images/placeholder.svg',
-    link: '/expert-picks'
-  }
-];
+function ProductCarousel() {
+  console.log('Rendering ProductCarousel component');
+  console.log('ProductCarousel function type:', typeof ProductCarousel);
+  
+  useEffect(() => {
+    console.log('ProductCarousel mounted');
+    return () => console.log('ProductCarousel unmounted');
+  }, []);
 
-export function ProductCarousel() {
   return (
     <section className="container mx-auto py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {sections.map((section, index) => (
+        {promotionalSections.map((section, index) => (
           <Link 
             key={index}
             href={section.link}
@@ -54,3 +48,5 @@ export function ProductCarousel() {
     </section>
   );
 }
+
+export { ProductCarousel };

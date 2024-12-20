@@ -1,7 +1,7 @@
-import { LucideIcon } from 'lucide-react';
+import { ReactNode } from 'react';
 
 export type Highlight = {
-  Icon: LucideIcon;
+  icon: ReactNode;
   title: string;
   description: string;
 };

@@ -1,4 +1,4 @@
-import { Truck, Phone, Mail, Clock } from 'lucide-react';
+import { Truck, Phone, Mail, Clock, Award, Leaf, HeartHandshake } from 'lucide-react';
 
 export const services = [
   {

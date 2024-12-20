@@ -2,7 +2,7 @@
 
 A modern e-commerce platform for Mr Maple, specializing in rare and unique Japanese maple varieties.
 
-## Current Version: v1.4
+## Current Version: v1.5
 
 ### Features
 - Modern, responsive design
@@ -10,6 +10,8 @@ A modern e-commerce platform for Mr Maple, specializing in rare and unique Japan
 - Soft color scheme reflecting natural, botanical themes
 - Mobile-friendly interface
 - Optimized for plant browsing and shopping
+- Unified collections showcase with featured banners
+- Integrated promotional sections
 
 ### Tech Stack
 - Next.js 14
@@ -32,6 +34,7 @@ npm run build
 ```
 
 ### Version History
+- v1.5: Unified collections showcase, integrated promotional sections, enhanced navigation structure
 - v1.4: Enhanced navigation with soft beige backgrounds and improved text contrast
 - v1.3: Implemented mega menu and navigation system
 - v1.2: Added hero section and basic layout
